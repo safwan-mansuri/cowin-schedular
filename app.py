@@ -5,7 +5,7 @@ from job import *
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('cron', day_of_week='mon-sun', minute=2)
+@sched.scheduled_job('cron', day_of_week='mon-sun', minute=1)
 def scheduled_job():
     callUpdateApi()
 
